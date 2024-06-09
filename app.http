@@ -1,0 +1,73 @@
+# API REST
+
+###
+GET http://localhost:5000/api/restaurants
+
+POST http://localhost:5000/api/restaurants
+
+
+    "name": "Restaurante 1",
+    "address": "Rua 1",
+    "city": "5f7b1b3b7f3b3b1b3b1b3b1",
+    "state": "5f7b1b3b7f3b3b1b3b1b3b1",
+    "phone": "999999999",
+    "email": "
+
+###
+GET http://localhost:5000/api/states
+
+
+###
+GET http://localhost:5000/api/drivers
+
+
+###
+GET http://localhost:5000/api/cities
+
+
+###
+GET http://localhost:5000/api/users
+
+
+###
+POST http://localhost:5000/api/users
+
+    "name": "User 1",
+    "email": "
+
+
+
+###
+GET http://localhost:5000/api/addresses
+
+
+###
+GET http://localhost:5000/api/orders
+
+
+###
+GET http://localhost:5000/api/comments
+
+
+###
+GET http://localhost:5000/api/categories
+
+
+###
+GET http://localhost:5000/api/menuItems
+
+
+###
+GET http://localhost:5000/api/restaurantOwners
+
+
+###
+GET http://localhost:5000/api/orderStatuses
+
+
+###
+GEt http://localhost:5000/api/status_catalogs
+
+
+###
+GET http://localhost:5000/api/order_menu_items
