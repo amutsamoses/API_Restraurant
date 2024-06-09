@@ -329,8 +329,17 @@ export const restaurantOwnerRelations = relations(
   })
 );
 
+// State and City relationship
 export const stateRelations = relations(State, ({ many }) => ({
   cities: many(City),
+}));
+
+//cities with state relationship
+export const stateCityRelations = relations(City, ({ one }) => ({
+  state: one(State, {
+    fields: [City.state_id],
+    references: [State.id],
+  }),
 }));
 
 export const statusCatalogRelations = relations(StatusCatalog, ({ many }) => ({

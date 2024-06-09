@@ -6,6 +6,7 @@ import {
   createState,
   updateState,
   deleteState,
+  stateWithCity,
 } from "./state.controller";
 import { get } from "http";
 import { stateSchema } from "../validators";
@@ -26,3 +27,5 @@ stateRouter.post(
 );
 stateRouter.put("/state/:id", updateState);
 stateRouter.delete("/state/:id", deleteState);
+
+stateRouter.get("/states_with_cities", stateWithCity);

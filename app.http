@@ -71,3 +71,7 @@ GEt http://localhost:5000/api/status_catalogs
 
 ###
 GET http://localhost:5000/api/order_menu_items
+
+
+###
+GET http://localhost:5000/api/states_with_cities

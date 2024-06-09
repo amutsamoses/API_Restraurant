@@ -5,6 +5,7 @@ import {
   createStateService,
   updateStateService,
   deleteStateService,
+  stateCityService,
 } from "./state.service";
 
 export const listState = async (c: Context) => {
@@ -76,6 +77,18 @@ export const deleteState = async (c: Context) => {
     if (!res) return c.text("user not deleted!👽", 404);
 
     return c.json({ msg: res }, 201);
+  } catch (error: any) {
+    return c.json({ error: error?.message }, 400);
+  }
+};
+
+export const stateWithCity = async (c: Context) => {
+  try {
+    const data = await stateCityService();
+    if (data == null) {
+      return c.text("no State with Cities not found!😶‍🌫️👽", 404);
+    }
+    return c.json(data, 200);
   } catch (error: any) {
     return c.json({ error: error?.message }, 400);
   }
